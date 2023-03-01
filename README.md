@@ -5,3 +5,4 @@
 ```
 docker-compose up
 ```
+4. Access API via url: http://127.0.0.1:8000/docs
