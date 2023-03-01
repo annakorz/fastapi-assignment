@@ -28,7 +28,7 @@ Must include deployment instructions (requirements installation, startup)
 Figure out how to build and run docker containers
 Please refer to this guide https://testdriven.io/blog/docker-best-practices/ for docker best practices
 
-##Repository requirements:
+## Repository requirements:
 - requirements.txt
 - Dockerfile
 - .gitignore (must include .env and other unnecessary files, e.g. database, cache files, etc., you can find templates online and extend them if needed)
