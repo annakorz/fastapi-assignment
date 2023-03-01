@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    command: uvicorn main:app --host 0.0.0.0
+    env_file: 
+      - .env
+    volumes:
+      - ./database/sql_app.db:/app/fastapi_demo.db:delegated
+    ports:
+      - 8000:8000
