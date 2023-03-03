@@ -7,6 +7,6 @@ services:
     env_file: 
       - .env
     volumes:
-      - ./database/sql_app.db:/app/fastapi_demo.db:delegated
+      - ./database:/app/data
     ports:
       - 8000:8000

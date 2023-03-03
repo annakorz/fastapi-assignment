@@ -4,8 +4,13 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
+DB_NAME = os.getenv("DATABASE_NAME")
 
-DATABASE_URL = os.getenv("DATABASE_URL")
+# for testing without access to .env file
+if not DB_NAME:
+    DB_NAME = "my_database.db"
+
+DATABASE_URL = "sqlite:///data/" + DB_NAME
 
 
 engine = create_engine(
